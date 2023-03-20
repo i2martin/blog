@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{{url_for('home')}}">Početna</a>
+    <a href="{{url_for('o_meni')}}">O meni</a>
+
+    {% for post in postovi %}
+    <p> {{post}}</p>
+    {% endfor %}
+</body>
+</html>
